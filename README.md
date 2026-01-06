@@ -1,72 +1,34 @@
-# Autocomplete Country Search
+<img width="1299" height="436" alt="Zrzut ekranu 2026-01-06 130235" src="https://github.com/user-attachments/assets/4d1edd97-3176-40ae-95e1-61d6e902c69a" />
+# Custom Autocomplete Component
 
-This project is a simple React-based autocomplete component that suggests countries from a predefined list as the user types into the input field.
+A lightweight, dependency-free autocomplete search component built with React. This project demonstrates handling complex user interactions, keyboard navigation, and dynamic list filtering.
 
-## Features
+## 🚀 Live Demo
+- **URL:** [https://custom-autocomplete.vercel.app/](https://custom-autocomplete.vercel.app/)
 
-- **Autocomplete Functionality**: As users type in the input field, the component displays a list of countries that match the input text.
-- **Keyboard Navigation**: Users can navigate through the suggestions using the UP and DOWN arrow keys. The Enter key selects a suggestion.
-- **Click to Select**: Users can also select a suggestion by clicking on it.
-- **Dynamic Suggestion List**: The suggestion list updates dynamically as the user types.
+## 🔑 Key Features
+- **Dynamic Filtering**: Real-time suggestion updates based on user input.
+- **Keyboard Navigation**: Full support for `UP`, `DOWN` arrows for selection and `ENTER` to confirm.
+- **Mouse Interaction**: Click-to-select functionality with hover state management.
+- **State-Driven UI**: Managed via React hooks to ensure synchronized rendering of the input and suggestion list.
+- **Modular Styling**: Built with SCSS for clear separation of concerns and easy customization.
 
-## Demo
+## 🛠 Tech Stack
+- **React.js**: Functional components and state hooks (`useState`, `useRef`).
+- **JavaScript (ES6+)**: Array filtering and event handling logic.
+- **SCSS**: Modular stylesheets.
 
-![Autocomplete Screenshot](./path_to_image)
-*Example of the Autocomplete component in action.*
+## 📁 Project Structure
+- `src/components/Autocomplete.js`: Core logic for filtering and event handling.
+- `src/style/autocomplete.scss`: Component-specific styling and animations.
+- `src/App.js`: Main container demonstrating the component implementation.
 
-## Technologies Used
+## 🏗 Engineering Challenges Solved
+- **Event Management**: Precise handling of keyboard events to prevent default browser behavior during navigation.
+- **Index Tracking**: Synchronizing the highlighted suggestion index with both keyboard and mouse movements.
+- **Zero-Dependency Logic**: All filtering and navigation logic is implemented using native JavaScript, minimizing the bundle size.
 
-- **React**: JavaScript library for building user interfaces.
-- **SCSS**: CSS preprocessor for styling the components.
-- **JavaScript**: Core language for the application logic.
-
-## Getting Started
-
-### Prerequisites
-
-Make sure you have the following installed:
-
-- [Node.js](https://nodejs.org/en/download/) (v14 or above)
-- [npm](https://www.npmjs.com/get-npm) (comes with Node.js)
-
-### Installation
-
-1. Clone the repository to your local machine:
-
-    ```bash
-    git clone https://github.com/your-username/autocomplete-country-search.git
-    ```
-
-2. Navigate to the project directory:
-
-    ```bash
-    cd autocomplete-country-search
-    ```
-
-3. Install the required dependencies:
-
-    ```bash
-    npm install
-    ```
-
-4. Run the development server:
-
-    ```bash
-    npm start
-    ```
-
-This will start the application and open it in your browser at `http://localhost:3000`.
-
-### Project Structure
-
-```bash
-├── src
-│   ├── components
-│   │   ├── Autocomplete.js        # The main autocomplete component
-│   ├── style
-│   │   ├── App.css                # Styles for the app
-│   │   ├── autocomplete.scss      # Styles for the autocomplete component
-│   ├── App.js                     # Main entry point of the application
-│   └── index.js                   # Renders the app
-├── package.json
-└── README.md
+## 🚀 Setup
+1. Clone the repository: `git clone https://github.com/RafalSprengel/Autocomplete`
+2. Install dependencies: `npm install`
+3. Start development server: `npm start`
